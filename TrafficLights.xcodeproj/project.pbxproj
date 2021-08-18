@@ -40,8 +40,8 @@
 		D8C079E426CD33EA002E4909 = {
 			isa = PBXGroup;
 			children = (
-				D8C079EF26CD33EA002E4909 /* TrafficLights */,
 				D8C079EE26CD33EA002E4909 /* Products */,
+				D8C079EF26CD33EA002E4909 /* TrafficLights */,
 			);
 			sourceTree = "<group>";
 		};

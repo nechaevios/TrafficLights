@@ -30,28 +30,41 @@
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zdb-U5-66i"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acs-Uu-4Yz">
-                                <rect key="frame" x="145" y="386" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                            <view contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVz-8J-dhk">
-                                <rect key="frame" x="145" y="136" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ny-vZ-ilp">
-                                <rect key="frame" x="145" y="261" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="u8s-I5-hjR">
+                                <rect key="frame" x="145" y="94" width="100" height="350"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="UVz-8J-dhk">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="center" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="2Ny-vZ-ilp">
+                                        <rect key="frame" x="0.0" y="125" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="center" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="acs-Uu-4Yz">
+                                        <rect key="frame" x="0.0" y="250" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Ny-vZ-ilp" firstAttribute="top" secondItem="UVz-8J-dhk" secondAttribute="bottom" constant="25" id="2AH-P4-EDB"/>
+                                    <constraint firstAttribute="height" constant="350" id="6HL-ic-hc6"/>
+                                    <constraint firstAttribute="width" secondItem="u8s-I5-hjR" secondAttribute="height" multiplier="2:7" id="7pk-5X-62s"/>
+                                    <constraint firstItem="acs-Uu-4Yz" firstAttribute="top" secondItem="2Ny-vZ-ilp" secondAttribute="bottom" constant="25" id="Wrl-tp-9iU"/>
+                                    <constraint firstItem="2Ny-vZ-ilp" firstAttribute="centerY" secondItem="u8s-I5-hjR" secondAttribute="centerY" id="Zm4-vJ-6Ov"/>
+                                    <constraint firstItem="2Ny-vZ-ilp" firstAttribute="top" secondItem="u8s-I5-hjR" secondAttribute="top" constant="125" id="gS6-of-48r"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vx6-JE-w9D" secondAttribute="trailing" constant="120" id="1uS-ja-kh4"/>
+                            <constraint firstItem="u8s-I5-hjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="Con-PK-4qo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vx6-JE-w9D" secondAttribute="bottom" constant="50" id="Dst-7m-8cg"/>
                             <constraint firstItem="vx6-JE-w9D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="EhK-9Z-f0i"/>
+                            <constraint firstItem="u8s-I5-hjR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Mho-Zm-xKC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u8s-I5-hjR" secondAttribute="trailing" constant="145" id="glQ-Fg-KAR"/>
                         </constraints>
                     </view>
                     <connections>
